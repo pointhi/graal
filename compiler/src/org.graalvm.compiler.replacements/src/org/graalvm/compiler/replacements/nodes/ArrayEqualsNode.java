@@ -214,6 +214,14 @@ public final class ArrayEqualsNode extends FixedWithNextNode implements LIRLower
         return equals(array1, array2, length, JavaKind.Double);
     }
 
+    public ValueNode getArray1() {
+        return array1;
+    }
+
+    public ValueNode getArray2() {
+        return array2;
+    }
+
     public ValueNode getLength() {
         return length;
     }
